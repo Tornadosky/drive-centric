@@ -24,16 +24,44 @@ drawer?.addEventListener('click', (event) => {
   }
 });
 
+const animateCount = (node) => {
+  const target = Number(node.dataset.count || node.textContent.replace(/\D/g, ''));
+  if (!Number.isFinite(target) || node.dataset.counted === 'true') return;
+  node.dataset.counted = 'true';
+  const duration = 900;
+  const start = performance.now();
+  const tick = (now) => {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    node.textContent = Math.round(target * eased).toLocaleString();
+    if (progress < 1) requestAnimationFrame(tick);
+    else node.textContent = target.toLocaleString();
+  };
+  requestAnimationFrame(tick);
+};
+
 const reveals = Array.from(document.querySelectorAll('.reveal'));
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
+      entry.target.querySelectorAll?.('[data-count]').forEach(animateCount);
       revealObserver.unobserve(entry.target);
     }
   });
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 reveals.forEach(el => revealObserver.observe(el));
+
+const standaloneCounters = Array.from(document.querySelectorAll('[data-count]'));
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCount(entry.target);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.45 });
+standaloneCounters.forEach(el => counterObserver.observe(el));
 
 const shell = document.querySelector('[data-testimonials]');
 if (shell) {

@@ -1,17 +1,10 @@
-# DriveCentric Static Homepage Clone
+# DriveCentric homepage recreation
 
-This project is a static HTML/CSS/JS recreation of the public DriveCentric homepage view.
+A static, startup-style front-end recreation of the public DriveCentric homepage. The navigation has been simplified for a cleaner startup-style experience.
 
-## Files
+## Run locally
 
-- `index.html` — page markup
-- `styles.css` — responsive layout, colors, cards, animations, and navigation
-- `script.js` — mobile menu, scroll header, reveal animations, and testimonial carousel
-- `assets/drivecentric-logo.svg` — local SVG wordmark approximation
-
-## Open locally
-
-Open `index.html` directly in a browser, or run a tiny local server:
+Open `index.html` directly in your browser, or run:
 
 ```bash
 python3 -m http.server 8080
@@ -21,4 +14,4 @@ Then visit `http://localhost:8080`.
 
 ## Notes
 
-The page references public remote image assets from `framerusercontent.com` used on the live DriveCentric site. Those images require an internet connection to load.
+The main hero, phone, marketing stats, and testimonial thumbnails are bundled locally in `assets/images/`. Some dealership and integration logos are referenced from the public remote asset URLs so they will load with internet access.
