@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI-Powered Automotive CRM for Car Dealerships | DriveCentric</title>
+  <meta name="description" content="A static front-end recreation of the DriveCentric homepage." />
+  <link rel="icon" href="assets/drivecentric-logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="DriveCentric home">
+        <img src="assets/drivecentric-logo.svg" alt="DriveCentric" />
+      </a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-item has-menu">
+          <button type="button">Products <span>⌄</span></button>
+          <div class="mega-menu">
+            <a href="https://drivecentric.com/products/engagement-hub"><b>Engagement Hub</b><small>CRM & lead management</small></a>
+            <a href="https://drivecentric.com/products/ai-agents"><b>AI Agents</b><small>Automated lead response</small></a>
+            <a href="https://drivecentric.com/mobile-app"><b>Mobile App</b><small>iOS, Android, Apple Watch</small></a>
+          </div>
+        </div>
+        <div class="nav-item has-menu">
+          <button type="button">Solutions <span>⌄</span></button>
+          <div class="mega-menu">
+            <a href="https://drivecentric.com/products/engagement-hub"><b>Franchise</b><small>Scale connected stores</small></a>
+            <a href="https://drivecentric.com/solutions/independent"><b>Independent</b><small>Modern CRM for independents</small></a>
+            <a href="https://drivecentric.com/oem-certifications"><b>OEM Programs</b><small>Certified connections</small></a>
+            <a href="https://drivecentric.com/solutions/forddirect"><b>FordDirect</b><small>Ford & Lincoln dealers</small></a>
+          </div>
+        </div>
+        <div class="nav-item has-menu">
+          <button type="button">Company <span>⌄</span></button>
+          <div class="mega-menu">
+            <a href="https://drivecentric.com/about-us"><b>About Us</b><small>Meet DriveCentric</small></a>
+            <a href="https://drivecentric.com/careers"><b>Careers</b><small>Join the team</small></a>
+          </div>
+        </div>
+        <div class="nav-item has-menu">
+          <button type="button">Resources <span>⌄</span></button>
+          <div class="mega-menu">
+            <a href="https://drivecentric.com/collection"><b>Blog</b><small>Ideas and updates</small></a>
+            <a href="https://drivecentric.com/case-studies"><b>Case Studies</b><small>Dealer results</small></a>
+            <a href="https://drivecentric.com/events"><b>Events</b><small>Meet us live</small></a>
+            <a href="https://drivecentric.com/integrations"><b>Integrations</b><small>DMS & data partners</small></a>
+            <a href="https://drivecentric.com/partner-program"><b>Partner Program</b><small>Build with DriveCentric</small></a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header-actions">
+        <a class="text-link" href="https://app.drivecentric.com">Login</a>
+        <a class="text-link" href="https://help.drivecentric.com">Support</a>
+        <a class="btn btn-small" href="https://drivecentric.com/request-demo">Request Demo</a>
+      </div>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <aside class="mobile-drawer" aria-hidden="true" data-mobile-drawer>
+      <div class="drawer-card">
+        <a href="https://drivecentric.com/products/engagement-hub">Products</a>
+        <a href="https://drivecentric.com/products/engagement-hub">Solutions</a>
+        <a href="https://drivecentric.com/about-us">Company</a>
+        <a href="https://drivecentric.com/collection">Resources</a>
+        <a href="https://app.drivecentric.com">Login</a>
+        <a href="https://help.drivecentric.com">Support</a>
+        <a class="btn" href="https://drivecentric.com/request-demo">Request Demo</a>
+      </div>
+    </aside>
+
+    <main id="top">
+      <section class="hero section-pad">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span class="spark"></span>AI-Powered Automotive CRM</div>
+            <h1>The CRM your dealership wants to use.</h1>
+            <p class="hero-lede">Stop losing leads to slow follow-ups and clunky software. DriveCentric's CRM responds to every lead within minutes, keeps your team organized, and turns more ups into sales.</p>
+            <div class="hero-cta-row">
+              <a class="btn btn-large" href="https://drivecentric.com/request-demo">Request a Demo</a>
+              <a class="ghost-link" href="#platform">Explore Platform <span>→</span></a>
+            </div>
+            <div class="trust-inline">
+              <div class="avatar-stack" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+              <p>Trusted by thousands of dealerships</p>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal delay-1">
+            <div class="tilt-frame">
+              <img class="hero-product" src="https://framerusercontent.com/images/aFKBH6329Qok9Ty0dIKjVm38.png?height=2410&amp;width=3397" alt="DriveCentric sales pipeline dashboard" />
+              <div class="hero-fallback" aria-hidden="true"></div>
+            </div>
+            <div class="floating-card lead-card">
+              <span class="dot green"></span>
+              <b>Lead engaged</b>
+              <small>AI response sent in 1m 42s</small>
+            </div>
+            <div class="floating-card sold-card">
+              <span class="metric">274</span>
+              <small>Delivered</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-band" aria-label="Trusted dealership logos">
+        <div class="container">
+          <p>Trusted by thousands of dealerships</p>
+          <div class="logo-marquee mask-fade">
+            <div class="logo-track">
+              <img src="https://framerusercontent.com/images/j5eexD0ucwUk5fqq9zPhlRziwI.png?height=505&amp;scale-down-to=512&amp;width=1920" alt="Pohanka of Salisbury" />
+              <img src="https://framerusercontent.com/images/1O7m3npXJgNh4F79ODwQ8GQoA.png?height=80&amp;width=96" alt="Boucher" />
+              <img src="https://framerusercontent.com/images/I7sorkNsfXV5qEnZi2VZR9Jsblc.png?height=190&amp;scale-down-to=512&amp;width=688" alt="Premier Automotive" />
+              <img src="https://framerusercontent.com/images/zfGK7zf63B3kNcsL4Rx0syxcc.png?height=112&amp;width=180" alt="Morgan Automotive Group" />
+              <img src="https://framerusercontent.com/images/5TTAykIfc6GZP2pQnkEzObURiI.png?height=76&amp;width=180" alt="Gee Automotive Companies" />
+              <img src="https://framerusercontent.com/images/KmnXf6ocJIOFn5boqNyC9IS0uLc.png?height=112&amp;width=196" alt="Cavenaugh Auto Group" />
+              <img src="https://framerusercontent.com/images/I8lpU6pBKhy0SwYCUgMe5eQQLkU.png?height=102&amp;width=180" alt="DOD Automotive Holdings" />
+              <img src="https://framerusercontent.com/images/ds5TWISIKqM1GlCHpNRbj5TwfQU.png?height=66&amp;width=180" alt="Rydell Auto" />
+              <img src="https://framerusercontent.com/images/1wcCV4jFOFLFr96f4Z4kB9DgY.png?height=112&amp;width=196" alt="Russ Darrow" />
+              <img src="https://framerusercontent.com/images/j5eexD0ucwUk5fqq9zPhlRziwI.png?height=505&amp;scale-down-to=512&amp;width=1920" alt="Pohanka of Salisbury" aria-hidden="true" />
+              <img src="https://framerusercontent.com/images/1O7m3npXJgNh4F79ODwQ8GQoA.png?height=80&amp;width=96" alt="Boucher" aria-hidden="true" />
+              <img src="https://framerusercontent.com/images/I7sorkNsfXV5qEnZi2VZR9Jsblc.png?height=190&amp;scale-down-to=512&amp;width=688" alt="Premier Automotive" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="better section-pad" id="better">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>What a Better CRM Looks Like.</h2>
+          </div>
+
+          <div class="better-grid">
+            <article class="feature-card no-lead reveal">
+              <div class="icon-badge">↗</div>
+              <h3>Never miss a lead</h3>
+              <p>Speed wins deals. DriveCentric’s AI assistant responds to new leads in minutes — even at 2 a.m. It keeps following up when your team can’t.</p>
+              <div class="promise-wall" aria-hidden="true">
+                <span>No more ghosted buyers.</span>
+                <span>No more ghosted buyers.</span>
+                <span>No more ghosted buyers.</span>
+                <span>No more missed ups.</span>
+                <span>No more missed ups.</span>
+                <span>No more missed ups.</span>
+                <span class="win">Just more cars off the lot.</span>
+              </div>
+            </article>
+
+            <article class="feature-card lifetime reveal delay-1">
+              <div class="icon-badge purple">💬</div>
+              <h3>Turn car buyers into lifetime customers</h3>
+              <p>The sale isn’t the finish line — it’s just the start. DriveCentric helps you stay connected after the sale with automated follow-ups, service reminders, and trade-in offers.</p>
+              <div class="chat-card" aria-label="Customer text conversation">
+                <div class="bubble incoming">Hey Jon, I hope your Tahoe trip went well! Checking back in to see if you’re still wanting to test drive that Tacoma?</div>
+                <div class="bubble outgoing">Absolutely!</div>
+                <div class="bubble outgoing short">When do you have an opening?</div>
+                <div class="bubble incoming short">How's tomorrow afternoon on your lunch break?</div>
+              </div>
+            </article>
+
+            <article class="feature-card team-card reveal delay-2">
+              <div class="icon-badge mint">✓</div>
+              <h3>One your team won’t hate</h3>
+              <p>Legacy CRMs slow your team down. Ours fires them up. DriveCentric is fast, mobile, and ridiculously easy to use. Managers see the full picture. Reps close deals from anywhere.</p>
+              <div class="device-stack">
+                <img class="phone-img" src="https://framerusercontent.com/images/ucxf9sQBj9bfWdW5blghZVfIz3Y.png?height=4000&amp;width=2236" alt="DriveCentric mobile app sales pipeline" />
+                <img class="watch-img" src="https://framerusercontent.com/images/iJRVSMzYYqpO5uQH73uZ240Ug0.png?height=1120&amp;width=1260" alt="DriveCentric Apple Watch notifications" />
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="platform section-pad" id="platform">
+        <div class="container">
+          <div class="platform-intro reveal">
+            <div>
+              <div class="eyebrow dark"><span class="spark"></span>Platform Overview</div>
+              <h2>One login.<br>Zero headaches.</h2>
+            </div>
+            <p>Stop juggling multiple apps and spreadsheets. DriveCentric replaces the patchwork of software with one streamlined hub for your dealership.</p>
+          </div>
+
+          <div class="dashboard-wrap reveal delay-1">
+            <div class="dashboard-visual">
+              <img src="https://framerusercontent.com/images/63GdCHsHMCpyIZYBDh9oJ9zuoM.jpg?height=2731&amp;width=4096" alt="Dealership communications team" />
+              <div class="pipeline-overlay">
+                <div class="pipeline-top"><span></span><strong>Sales Pipeline</strong><i></i></div>
+                <div class="pipeline-stages">
+                  <div><b>365</b><small>Engaged</small></div>
+                  <div><b>1656</b><small>Visit</small></div>
+                  <div><b>324</b><small>Proposal</small></div>
+                  <div><b>286</b><small>Lead</small></div>
+                  <div><b>274</b><small>Delivered</small></div>
+                </div>
+                <div class="stage-labels">
+                  <span>Engaged</span><span>Visit</span><span>Proposal</span><span>Lead</span><span>Delivered</span><span>Snooze</span><span>Sold</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card reveal">
+              <div class="product-icon">»</div>
+              <h3>CRM & Lead Management</h3>
+              <p>Track every opportunity from new lead to sold vehicle, with simple workflows that keep your sales process moving.</p>
+              <a href="https://drivecentric.com/products/engagement-hub">Explore More</a>
+            </article>
+            <article class="product-card comm-card reveal delay-1">
+              <div class="product-icon purple">●</div>
+              <h3>Integrated Communications</h3>
+              <p>Built-in texting, email, and live video so you can reach customers on their terms – all without leaving the CRM.</p>
+              <div class="mini-chat" aria-hidden="true">
+                <span>Hey David!</span><span>Does the car have any rust?</span><span class="yes">Yes</span><span>No</span>
+              </div>
+              <a href="https://drivecentric.com/products/engagement-hub">Explore More</a>
+            </article>
+            <article class="product-card ai-card reveal delay-2">
+              <div class="product-icon mint">AI</div>
+              <h3>AI Agents</h3>
+              <p>A virtual team member that engages new leads automatically (24/7) and follows up relentlessly, acting like a 24/7 BDC agent for your store.</p>
+              <img src="https://framerusercontent.com/images/LzOKcnEmr1NVjMtFENM2jK4gFqA.webp?height=636&amp;width=1176" alt="AI agent performance statistics" />
+              <a href="https://drivecentric.com/products/ai-agents">Explore More</a>
+            </article>
+            <article class="product-card reveal delay-1">
+              <div class="product-icon slate">◇</div>
+              <h3>DMS & Data Integration</h3>
+              <p>Your data, unified. DriveCentric plays nice with your DMS, inventory feeds, and more—so your team’s always operating at full power.</p>
+              <a href="https://drivecentric.com/integrations">Explore More</a>
+            </article>
+            <article class="product-card wide marketing-card reveal delay-2">
+              <div class="product-icon pink">✦</div>
+              <div>
+                <h3>Marketing Automation</h3>
+                <p>Send targeted campaigns and follow-ups to prospects and past customers automatically. Boost engagement without adding work for your team.</p>
+                <a href="https://drivecentric.com/products/ai-agents">Explore More</a>
+              </div>
+              <div class="campaign-mock" aria-hidden="true">
+                <span></span><span></span><span></span>
+                <b>Reactivate past customers</b>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="integration-strip" aria-label="Integration logos">
+        <div class="container">
+          <div class="integration-track mask-fade">
+            <div class="integrations-row">
+              <img src="https://framerusercontent.com/images/0BCo81PIDHOVri1u2NcPnoLUGac.png?height=15&amp;width=113" alt="Tekion" />
+              <img src="https://framerusercontent.com/images/RHWgTery67rjR8dXlzGJsHrYU.png?height=28&amp;width=112" alt="Automate by DealerSocket" />
+              <img src="https://framerusercontent.com/images/VxjfhoszNQjqYfWZlgEyE1B6jCU.png?height=68&amp;width=113" alt="DMS partner" />
+              <img src="https://framerusercontent.com/images/4Vxqr4AqGvDkc995GQjnSvdMEA.png?height=68&amp;width=113" alt="DMS partner" />
+              <img src="https://framerusercontent.com/images/Ntp8Dhifmh9dLqLPrMR9eQOp3E0.png?height=67&amp;width=113" alt="DMS partner" />
+              <img src="https://framerusercontent.com/images/KzeD8Qowyi4X244Kz6axfwKo.png?height=16&amp;width=114" alt="DMS partner" />
+              <img src="https://framerusercontent.com/images/CHnsdnkjkxF4JOu8J1q5CYpwMBI.png?height=32&amp;width=112" alt="Autosoft" />
+              <img src="https://framerusercontent.com/images/OINgjutdVHHJ9aYtqKQiAt5PdFI.png?height=67&amp;width=112" alt="DealerBuilt" />
+              <img src="https://framerusercontent.com/images/0BCo81PIDHOVri1u2NcPnoLUGac.png?height=15&amp;width=113" alt="Tekion" aria-hidden="true" />
+              <img src="https://framerusercontent.com/images/RHWgTery67rjR8dXlzGJsHrYU.png?height=28&amp;width=112" alt="Automate by DealerSocket" aria-hidden="true" />
+              <img src="https://framerusercontent.com/images/CHnsdnkjkxF4JOu8J1q5CYpwMBI.png?height=32&amp;width=112" alt="Autosoft" aria-hidden="true" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="results section-pad" id="results">
+        <div class="container">
+          <div class="section-heading centered reveal">
+            <h2>Real dealers. Real results.</h2>
+            <p>DriveCentric isn’t just another software vendor – we're a partner that genuinely gets the car business.</p>
+          </div>
+
+          <div class="testimonial-shell reveal delay-1" data-testimonials>
+            <button class="carousel-btn prev" type="button" aria-label="Previous testimonial" data-prev>‹</button>
+            <div class="testimonial-track" data-track>
+              <article class="testimonial-card active">
+                <div class="video-thumb">
+                  <img src="https://framerusercontent.com/images/FcrdVxWsDcvjmRfNRDvcaP0R3FA.webp?height=1440&amp;width=2560" alt="Andrew Walser testimonial video thumbnail" />
+                  <span class="play">▶</span>
+                </div>
+                <blockquote>“I know for a fact DriveCentric is making a huge impact on our business just by the nature of the way they're talking to me, and it comes up every conversation that it's changing the way they manage in the game.”</blockquote>
+                <cite>Andrew Walser, CEO Walser Automotive</cite>
+              </article>
+              <article class="testimonial-card">
+                <div class="video-thumb">
+                  <img src="https://framerusercontent.com/images/Kdla3L0CcTXcwDUBcxOrsEg20.webp?height=1440&amp;width=2560" alt="Matthew Casebeer testimonial video thumbnail" />
+                  <span class="play">▶</span>
+                </div>
+                <blockquote>“If you want to make your dealership better, DriveCentric is the way to go. We have more customers, more sales and made more money just by using the CRM.”</blockquote>
+                <cite>Matthew Casebeer, Partner, Capitol Auto Group</cite>
+              </article>
+            </div>
+            <button class="carousel-btn next" type="button" aria-label="Next testimonial" data-next>›</button>
+            <div class="carousel-dots" aria-hidden="true"><span class="active"></span><span></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta section-pad">
+        <div class="container">
+          <div class="cta-card reveal">
+            <div class="cta-glow" aria-hidden="true"></div>
+            <h2>Discover the Power of DriveCentric</h2>
+            <p>Transform your automotive CRM with hyper-personalization and automation</p>
+            <a class="btn btn-large" href="https://drivecentric.com/request-demo">Request a Demo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="assets/drivecentric-logo.svg" alt="DriveCentric" />
+          <p>AI-powered CRM and engagement technology built for modern dealerships.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Products</h3>
+          <a href="https://drivecentric.com/products/engagement-hub">Engagement Hub</a>
+          <a href="https://drivecentric.com/products/ai-agents">AI Agents</a>
+          <a href="https://drivecentric.com/mobile-app">Mobile App</a>
+        </div>
+        <div class="footer-column">
+          <h3>Solutions</h3>
+          <a href="https://drivecentric.com/products/engagement-hub">Franchise</a>
+          <a href="https://drivecentric.com/solutions/independent">Independent</a>
+          <a href="https://drivecentric.com/oem-certifications">OEM Programs</a>
+          <a href="https://drivecentric.com/solutions/forddirect">FordDirect</a>
+        </div>
+        <div class="footer-column">
+          <h3>Company</h3>
+          <a href="https://drivecentric.com/about-us">About Us</a>
+          <a href="https://drivecentric.com/careers">Careers</a>
+          <a href="https://app.drivecentric.com">Login</a>
+          <a href="https://drivecentric.com/request-demo">Request a Demo</a>
+        </div>
+        <div class="footer-column">
+          <h3>Resources</h3>
+          <a href="https://drivecentric.com/collection">Blog</a>
+          <a href="https://drivecentric.com/case-studies">Case Studies</a>
+          <a href="https://drivecentric.com/events">Events</a>
+          <a href="https://drivecentric.com/integrations">Integrations</a>
+          <a href="https://drivecentric.com/partner-program">Partner Program</a>
+          <a href="https://help.drivecentric.com">Support</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 DriveCentric. All rights reserved.</span>
+        <div>
+          <a href="https://drivecentric.com/privacy-policy">Privacy Policy</a>
+          <a href="https://drivecentric.com/terms-of-service">Terms of Services</a>
+          <a href="https://drivecentric.com/do-not-sell-my-info">Do Not Sell My Info</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
