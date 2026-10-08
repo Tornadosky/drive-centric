@@ -1,10 +1,12 @@
-# DriveCentric homepage recreation
+# DriveCentral
 
-A static, startup-style front-end recreation of the public DriveCentric homepage. The navigation has been simplified for a cleaner startup-style experience.
+Marketing site for DriveCentral, an AI-powered CRM for car dealerships. Live at [drivecentric.space](https://drivecentric.space).
+
+Plain HTML, CSS and vanilla JavaScript. No build step.
 
 ## Run locally
 
-Open `index.html` directly in your browser, or run:
+Open `index.html` in a browser, or serve the folder:
 
 ```bash
 python3 -m http.server 8080
@@ -12,6 +14,17 @@ python3 -m http.server 8080
 
 Then visit `http://localhost:8080`.
 
-## Notes
+## Structure
 
-The main hero, phone, marketing stats, and testimonial thumbnails are bundled locally in `assets/images/`. Some dealership and integration logos are referenced from the public remote asset URLs so they will load with internet access.
+- `index.html`: page markup and the inline SVG icon set
+- `styles.css`: design tokens, layout, animations and breakpoints
+- `script.js`: header state, mobile menu, headline animation, live lead feed, scroll reveals and counters
+- `assets/`: logo, favicon and editorial images
+
+## Deploy
+
+The site is hosted on Vercel in the `drivecentric` project. From this folder:
+
+```bash
+vercel deploy --prod
+```
